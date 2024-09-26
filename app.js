@@ -31,6 +31,19 @@
 
 // console.log("girilen sayilarin ebob'u " + ebob);
 
+//!Armstrong Sayilari
 
-//!Armstrog Sayilari
-
+function armstrongNumber(num) {
+  let basamak = 0;
+  basamakSayisi = 0;
+  sum = 0;
+  while (num != 0) {
+    basamak = num % 10;
+    num = Math.trunc(num / 10);
+    console.log(basamak);
+    basamakSayisi++;
+    sum = sum + Math.pow(basamak, basamakSayisi);
+  }
+  return `${basamakSayisi} ${sum}`;
+}
+console.log(armstrongNumber(153));
