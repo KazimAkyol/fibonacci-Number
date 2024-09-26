@@ -48,6 +48,27 @@
 // }
 // console.log(armstrongNumber(153));
 
+console.log("*********** Armstrong ****************")
+
+function armstrongNumber(num) {
+    let number = num;
+    let basamak;
+    let basamakSayisi = num.toString().length;
+    let sum = 0;
+
+    while (num != 0) {
+        basamak = num % 10
+        sum += Math.pow(basamak, basamakSayisi)
+        num = Math.trunc(num / 10);
+    }
+    if (sum === number) {
+        return `${number} armstrong bir sayidir`
+    } else {
+       return `${number} armstrong degildir`
+    }
+}
+console.log(armstrongNumber(153))
+
 //! sayinin her bir basamagini alip basamak sayisina göre üssünü alip toplayalim:
 
 while (orjinalNumber > 0) {
