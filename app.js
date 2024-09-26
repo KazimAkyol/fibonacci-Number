@@ -33,17 +33,25 @@
 
 //!Armstrong Sayilari
 
-function armstrongNumber(num) {
-  let basamak = 0;
-  basamakSayisi = 0;
-  sum = 0;
-  while (num != 0) {
-    basamak = num % 10;
-    num = Math.trunc(num / 10);
-    console.log(basamak);
-    basamakSayisi++;
-    sum = sum + Math.pow(basamak, basamakSayisi);
-  }
-  return `${basamakSayisi} ${sum}`;
+// function armstrongNumber(num) {
+//   let basamak = 0;
+//   basamakSayisi = 0;
+//   sum = 0;
+//   while (num != 0) {
+//     basamak = num % 10;
+//     num = Math.trunc(num / 10);
+//     console.log(basamak);
+//     basamakSayisi++;
+//     sum = sum + Math.pow(basamak, basamakSayisi);
+//   }
+//   return `${basamakSayisi} ${sum}`;
+// }
+// console.log(armstrongNumber(153));
+
+//! sayinin her bir basamagini alip basamak sayisina göre üssünü alip toplayalim:
+
+while (orjinalNumber > 0) {
+    let digit = orjinalNumber % 10; //son basamagi bulduk
+    sum += digit ** digitCount; //basamagin digitCount kadar üssünü ekle
+    orjinalNumber = Math.floor(orjinalNumber/10)
 }
-console.log(armstrongNumber(153));
