@@ -33,6 +33,17 @@
 
 //!Armstrong Sayilari
 
+//? Elimizdeki sayiyi rakamlara ayirip, basamak sayisini bu rakamlara üs olarak veriyoruz ve bu sayilari topluyoruz. Toplama islemi sonucu yine ayni sayi cikiyorsa elimizdeki sayiya Armstrong Sayi deriz.
+
+// . 153: 1**3+5**3+3**3 = 1 + 125 + 27 = 153
+// . 370: 3**3+7**3+0**3 = 27 + 343 + 0 = 370
+// . 371: 3**3+7**3+1**3 = 27 + 343 + 1 = 371
+// . 407: 4**3+0**3+7**3 = 64 + 0 + 343 = 407
+// . 1634: 1**4+6**4+3**4+4**4 = 1 + 1296 + 81 +256 = 1634
+// . 8208
+// . 9474
+// . 54748
+
 // function armstrongNumber(num) {
 //   let basamak = 0;
 //   basamakSayisi = 0;
